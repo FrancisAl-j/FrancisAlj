@@ -25,8 +25,7 @@ const FlexForms = () => {
     });
   };
 
-  //const url = "https://portfolio-server-aqzj.onrender.com";
-  const url = "http://localhost:3000";
+  const url = "https://portfolio-server-aqzj.onrender.com";
 
   const handleEmailSend = async (e) => {
     e.preventDefault();
