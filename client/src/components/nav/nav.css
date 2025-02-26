@@ -1,0 +1,207 @@
+header {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  padding: 0 40px;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+header nav {
+  display: flex;
+  color: #fff;
+  width: 100%;
+  justify-content: space-between;
+}
+.nav-btns {
+  display: flex;
+  gap: 10px;
+  transition: 0.3s ease;
+}
+
+/* From Uiverse.io by meermubashar */
+.nav-btn {
+  padding: 10px 40px;
+  font-size: 0.8444rem;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+
+  font-weight: 700;
+  position: relative;
+  transition: all 0.5s;
+  z-index: 1;
+}
+
+.nav-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  height: 100%;
+  background-color: white;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.nav-btn:hover::before {
+  width: 100%;
+}
+
+.nav-btn:hover {
+  color: black;
+}
+
+.nav-btn:active:before {
+  background: #b9b9b9;
+}
+.logo-container {
+  transition: 0.3s ease;
+}
+
+/* Animation */
+.first-move {
+  opacity: 70%;
+  margin-right: 40px;
+  transition: 0.3s ease;
+}
+.second-move {
+  opacity: 57%;
+  margin-right: 60px;
+  transition: 0.3s ease;
+}
+.third-move {
+  opacity: 37%;
+  margin-right: 80px;
+  transition: 0.3s ease;
+}
+.fourth-move {
+  margin-right: 100px;
+  opacity: 14%;
+  transition: 0.3s ease;
+}
+.last-move {
+  display: none;
+}
+
+.first-move-logo {
+  opacity: 70%;
+  margin-left: 40px;
+  transition: 0.3s ease;
+}
+.second-move-logo {
+  opacity: 57%;
+  margin-left: 60px;
+  transition: 0.3s ease;
+}
+.third-move-logo {
+  opacity: 37%;
+  margin-left: 80px;
+  transition: 0.3s ease;
+}
+.fourth-move-logo {
+  margin-left: 100px;
+  opacity: 14%;
+  transition: 0.3s ease;
+}
+.last-move-logo {
+  display: none;
+}
+
+.glow {
+  color: #fff;
+
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7fff00,
+      0 0 40px #006400, 0 0 50px #006400, 0 0 60px #006400, 0 0 70px #006400;
+  }
+
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #00ff40,
+      0 0 40px #00ff40 0 0 50px #adff2f, 0 0 60px #adff2f, 0 0 70px #adff2f,
+      0 0 80px #adff2f;
+  }
+}
+
+.menu-btn {
+  display: none;
+  width: 30px;
+}
+
+.menu-container {
+  z-index: 999;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  top: -1000px;
+  left: 0;
+  height: 100svh;
+  transition: 0.5s ease;
+}
+.menu-show {
+  z-index: 999;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.61);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.6px);
+  -webkit-backdrop-filter: blur(9.6px);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100svh;
+  transition: 0.5s ease;
+}
+.menu-container a,
+.menu-show a {
+  text-decoration: none;
+  z-index: 999;
+}
+.menu-container .menu-item,
+.menu-show .menu-item {
+  color: #fff;
+  z-index: 999;
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+.menu-container h1,
+.menu-show h1 {
+  color: red;
+  font-size: 2rem;
+  align-self: flex-end;
+  padding: 10px;
+}
+/* Mobile responsive    */
+
+@media screen and (max-width: 940px) {
+  .nav-btns {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}

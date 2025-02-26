@@ -1,0 +1,7 @@
+main {
+  height: 300svh;
+  position: relative;
+}
+.main-content {
+  z-index: 99;
+}

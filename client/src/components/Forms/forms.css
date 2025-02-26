@@ -1,0 +1,159 @@
+.contact-container {
+  z-index: 120;
+  color: #fff;
+  display: flex;
+  flex: 1;
+}
+a {
+  text-decoration: none;
+}
+.resume {
+  flex: 1;
+  display: grid;
+  place-items: center;
+}
+.resume-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+.resume-contents h1 {
+  font-size: 4rem;
+}
+.contact-container form {
+  flex: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.contact-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/*! FORMS CSS */
+.input {
+  background: none;
+  border: 1px solid #353535;
+  outline: none;
+  padding: 11px 23px;
+  font-size: 16px;
+  border-radius: 50px;
+  color: #fff;
+  box-shadow: rgb(136 136 136 / 17%) 0px -23px 25px 0px inset,
+    rgb(81 81 81 / 23%) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+textarea {
+  background: none;
+  border: 1px solid #353535;
+  outline: none;
+  padding: 11px 23px;
+  font-size: 16px;
+  border-radius: 20px;
+  color: #fff;
+  box-shadow: rgb(136 136 136 / 17%) 0px -23px 25px 0px inset,
+    rgb(81 81 81 / 23%) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  resize: none;
+  height: 100%;
+}
+.pair-elements {
+  display: flex;
+  gap: 15px;
+  padding-top: 15px;
+}
+.form-element {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+}
+.form-element span {
+  font-weight: 600;
+  font-size: 1.2333rem;
+}
+
+/* ! BUTTON CSS */
+/* From Uiverse.io by iZOXVL */
+.boton-elegante {
+  padding: 15px 30px;
+  border: 2px solid #2c2c2c;
+  background-color: #1a1a1a;
+  color: #ffffff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: all 0.4s ease;
+  outline: none;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.boton-elegante img {
+  aspect-ratio: 1/1;
+  width: 25px;
+}
+
+.boton-elegante::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0) 70%
+  );
+  transform: scale(0);
+  transition: transform 0.5s ease;
+}
+
+.boton-elegante:hover::after {
+  transform: scale(4);
+}
+
+.boton-elegante:hover {
+  border-color: #666666;
+  background: #292929;
+}
+
+/* For smaller screen sizes */
+@media screen and (max-width: 998px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-container form {
+    margin-bottom: 40px;
+  }
+  textarea {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .pair-elements {
+    flex-direction: column;
+  }
+  .contact-container form {
+    margin-bottom: 40px;
+  }
+  textarea {
+    height: 250px;
+  }
+}

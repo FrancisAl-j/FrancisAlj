@@ -1,0 +1,109 @@
+.projects {
+  z-index: 999;
+  color: #fff;
+  padding: 100px 0;
+  margin-inline: auto;
+}
+.projects-container {
+  z-index: 999;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  place-items: center;
+  gap: 100px 0;
+}
+.project-container {
+  z-index: 999;
+  width: min(100% - 10px, 500px);
+  height: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+.project-container p {
+  color: #d3d3d3;
+  font-size: 0.866rem;
+}
+
+.project-container img {
+  width: min(100% - 10px, 500px);
+  height: 250px;
+  transition: 0.5s ease;
+}
+.project-container .project-content {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5.9px);
+  -webkit-backdrop-filter: blur(5.9px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: min(100%, 550px);
+  position: relative;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: space-between;
+  gap: 5px;
+  left: 0;
+  bottom: 10%;
+}
+.stacks-container {
+  display: flex;
+  gap: 10px;
+}
+.stack {
+  background: #28282b;
+  padding: 5px;
+  font-size: 0.6999rem;
+  outline: 0.7px solid #fff;
+  border-radius: 5px;
+}
+.top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50px;
+  margin: 10px;
+}
+.top-right img {
+  aspect-ratio: 1/1;
+  height: 40px;
+  width: 40px;
+}
+.soon {
+  background: #28282b;
+  padding: 3px;
+}
+.project-container:hover .web {
+  scale: 1.2;
+  transform: 0.5s ease;
+}
+a .link {
+  color: #1a73e8;
+  text-decoration: underline;
+  cursor: pointer;
+}
+a .link:hover {
+  color: #fff;
+}
+
+/* For smaller screens */
+@media screen and (max-width: 500px) {
+  .projects-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-container {
+    width: 100%;
+    position: relative;
+    padding: 0 20px;
+  }
+  .project-container .project-content {
+    position: static;
+    height: 100%;
+  }
+  .top-right {
+    position: absolute;
+    top: 0;
+  }
+}

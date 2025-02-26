@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  background: #000;
+}
+.is-visible {
+  opacity: 1;
+  transform: none;
+  visibility: visible;
+}
