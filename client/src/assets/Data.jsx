@@ -11,7 +11,7 @@ import Github from "./github.svg";
 // ! Project Images
 import About from "./images/about.jpg";
 import Port from "./images/port.jpg";
-import Port2 from "./images/port2.jpg";
+import Port2 from "./images/portfolio3.jpg";
 import Sample from "./images/sample.jpg";
 import Dental from "./images/dental.jpg";
 

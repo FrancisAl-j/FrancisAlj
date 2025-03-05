@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./home.css";
 import { stack_data } from "../../assets/Data";
-import Me from "../../assets/images/profile1.jpg";
+import Me from "../../assets/images/side.jpg";
 
 const Home = () => {
   const [stacks] = useState(stack_data);
