@@ -39,7 +39,8 @@ const Home = () => {
           </h1>
 
           <button className="ready">
-            <div className="dot"></div>Looking for OJT/Internship
+            <div className="dot"></div>Looking for an Entry-Level Web Developer
+            Position
           </button>
         </div>
       </div>

@@ -16,6 +16,7 @@ const FlexForms = () => {
   const [success, setSuccess] = useState(false);
   const [copy, setCopy] = useState(false);
   const [download, setDownload] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleChange = (e) => {
     const { value, name } = e.target;
@@ -31,6 +32,7 @@ const FlexForms = () => {
     e.preventDefault();
     const { name, from, message } = formData;
     try {
+      setIsLoading(true);
       const res = await axios.post(`${url}/api/email/send`, {
         name,
         from,
@@ -38,6 +40,7 @@ const FlexForms = () => {
       });
 
       if (res.status === 200) {
+        setIsLoading(false);
         setFormData({
           name: "",
           from: "",
@@ -135,6 +138,7 @@ const FlexForms = () => {
 
         <button className="boton-elegante">
           {success ? "Email Sent" : "Send Email"}
+          {isLoading && "Sending email..."}
         </button>
       </form>
     </section>

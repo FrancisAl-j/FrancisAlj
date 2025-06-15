@@ -14,6 +14,7 @@ import Port from "./images/port.jpg";
 import Port2 from "./images/portfolio3.jpg";
 import Sample from "./images/sample.jpg";
 import Dental from "./images/dental.jpg";
+import Blog from "../assets/images/Blog.jpg";
 
 export const stack_data = [
   JS,
@@ -66,5 +67,13 @@ export const projects_data = [
     description:
       "Platform for dental clinics with appointment system, dental charts and content-based filtering.",
     stacks: ["React Js", "NodeJs", "Express Js", "MongoDB"],
+  },
+
+  {
+    name: "Simple Blog",
+    image: Blog,
+    link: "https://blog-supabase-three.vercel.app/",
+    description: "Simple blog website using ReactJs and Supabase",
+    stacks: ["ReactJs", "Tailwind", "Redux", "Supabase"],
   },
 ];

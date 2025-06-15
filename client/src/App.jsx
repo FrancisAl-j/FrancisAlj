@@ -6,6 +6,7 @@ import Home from "./Contents/Home/Home";
 import Project from "./components/Carousel/Project";
 import Projects from "./Contents/Projects/Projects";
 import Contact from "./Contents/Contact/Contact";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
   // ! I ENDED HERE TO GET THE SCROLL FADE OUT OF THE NAVIGATION
@@ -39,6 +40,8 @@ const App = () => {
           disableRotation={false}
         />
       </div>
+
+      <Footer />
     </main>
   );
 };

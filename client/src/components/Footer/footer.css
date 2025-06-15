@@ -102,6 +102,11 @@ footer {
   gap: 25px;
 }
 
+.icon-flex p {
+  z-index: 999;
+  color: #fff;
+}
+
 @media screen and (max-width: 800px) {
   footer {
     flex-direction: column;
