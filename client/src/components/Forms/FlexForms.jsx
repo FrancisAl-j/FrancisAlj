@@ -137,8 +137,11 @@ const FlexForms = () => {
         </div>
 
         <button className="boton-elegante">
-          {success ? "Email Sent" : "Send Email"}
-          {isLoading && "Sending email..."}
+          {isLoading
+            ? "Sending email..."
+            : success
+            ? "Email Sent"
+            : "Send Email"}
         </button>
       </form>
     </section>
