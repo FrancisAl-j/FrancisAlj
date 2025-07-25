@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./home.css";
 import { stack_data } from "../../assets/Data";
 import Me from "../../assets/images/side.jpg";
+import Me2 from "../../assets/images/1x1.jpg";
 
 const Home = () => {
   const [stacks] = useState(stack_data);
@@ -12,7 +13,7 @@ const Home = () => {
       <div className="home-content">
         <div className="img-wrapper">
           <div className="img-container">
-            <img src={Me} alt="" />
+            <img src={Me2} alt="" />
           </div>
           <div className="slider">
             <div className="list">

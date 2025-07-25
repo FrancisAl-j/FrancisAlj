@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./forms.css";
-import Resume from "../../assets/Bilas_Resume.pdf";
+import Resume from "../../assets/FrancisAlj-Resume.pdf";
 import Copy from "../../assets/images/copy.svg";
 import Download from "../../assets/images/download.svg";
 import Check from "../../assets/images/check.svg";
