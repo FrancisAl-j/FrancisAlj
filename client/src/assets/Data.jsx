@@ -15,6 +15,7 @@ import Port2 from "./images/portfolio3.jpg";
 import Sample from "./images/sample.jpg";
 import Dental from "./images/dental.jpg";
 import Blog from "../assets/images/Blog.jpg";
+import Chat from "../assets/images/globalChat.jpg";
 
 export const stack_data = [
   JS,
@@ -57,6 +58,7 @@ export const projects_data = [
   {
     name: "Portfolio",
     image: Port2,
+    link: "https://francisalj.onrender.com/",
     description: "My 2nd official portfolio",
     stacks: ["React Js", "NodeJs", "Express Js", "MongoDB"],
   },
@@ -75,5 +77,13 @@ export const projects_data = [
     link: "https://blog-supabase-three.vercel.app/",
     description: "Simple blog website using ReactJs and Supabase",
     stacks: ["ReactJs", "Tailwind", "Redux", "Supabase"],
+  },
+
+  {
+    name: "Global Chat",
+    image: Chat,
+    link: "https://chatglobal-socket.vercel.app/",
+    description: "Simple chat application using MERN and Socket.io.",
+    stacks: ["Reactjs", "NodeJs", "ExpressJs", "MongoDB", "Socket.io"],
   },
 ];
