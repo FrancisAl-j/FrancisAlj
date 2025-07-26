@@ -16,6 +16,7 @@ import Sample from "./images/sample.jpg";
 import Dental from "./images/dental.jpg";
 import Blog from "../assets/images/Blog.jpg";
 import Chat from "../assets/images/globalChat.jpg";
+import Condor from "../assets/images/condor.jpg";
 
 export const stack_data = [
   JS,
@@ -85,5 +86,13 @@ export const projects_data = [
     link: "https://chatglobal-socket.vercel.app/",
     description: "Simple chat application using MERN and Socket.io.",
     stacks: ["Reactjs", "NodeJs", "ExpressJs", "MongoDB", "Socket.io"],
+  },
+
+  {
+    name: "Condor POS Solution Inc.",
+    image: Condor,
+    link: "https://condorpossolutions.ph/",
+    description: "Condor POS website, contribute as a frontend",
+    stacks: ["Wordpress"],
   },
 ];
